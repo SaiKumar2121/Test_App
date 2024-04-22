@@ -2,7 +2,7 @@ const errsole = require('errsole');
 const ErrsoleMongoDB = require('errsole-mongodb');
 
 // Initialize ErrsoleMongoDB with MongoDB connection details
-const storage = new ErrsoleMongoDB('mongodb://localhost:27017', 'deployDB');
+const storage = new ErrsoleMongoDB('mongodb://localhost:27017', 'deployDB1');
 
 // Initialize errsole with ErrsoleMongoDB as the storage backend
 errsole.initialize({
