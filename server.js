@@ -2,7 +2,7 @@ const errsole = require('errsole');
 const ErrsoleMongoDB = require('errsole-mongodb');
 
 // Initialize ErrsoleMongoDB with MongoDB connection details
-const storage = new ErrsoleMongoDB('mongodb://localhost:27017', 'deployDB1');
+const storage = new ErrsoleMongoDB('mongodb+srv://saikumar:rishi9100@cluster0.mcal1by.mongodb.net/', 'deployDB3');
 
 // Initialize errsole with ErrsoleMongoDB as the storage backend
 errsole.initialize({
@@ -22,9 +22,9 @@ app.get('/', (req, res) => {
 
 app.get('/logs', (req, res) => {
   console.log('console log statement');
-  console.error('error statment ');
-  console.error('uncaught server error');
-  console.error('uncaught exception');
+  console.log('error statment ');
+  console.warn('uncaught server error');
+  console.log('uncaught exception');
   console.info('informational logs');
   console.debug('debug log statement');
   console.warn('warn log statement');

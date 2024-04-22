@@ -12,6 +12,7 @@
   "dependencies": {
     "errsole": "^2.1.0",
     "errsole-mongodb": "^1.1.1",
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongodb": "^6.5.0"
   }
 }
