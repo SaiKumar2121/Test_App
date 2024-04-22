@@ -1,14 +1,10 @@
 const errsole = require('errsole');
 const ErrsoleMongoDB = require('errsole-mongodb');
 
-// Initialize ErrsoleMongoDB with MongoDB connection details
-const storage = new ErrsoleMongoDB('mongodb+srv://saikumar:rishi9100@cluster0.mcal1by.mongodb.net/', 'deployDB3');
 
-// Initialize errsole with ErrsoleMongoDB as the storage backend
+// Initialize errsole with ErrsoleMongoDB as the storage backen
 errsole.initialize({
-  storage,
-  port: 8001,
-  path: '/'
+  storage:  new ErrsoleMongoDB('mongodb+srv://saikumar:rishi9100@cluster0.mcal1by.mongodb.net/', 'deployDB3'),
 });
 const express = require('express');
 const app = express();
