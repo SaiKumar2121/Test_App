@@ -17,12 +17,6 @@ app.get('/', (req, res) => {
 app.get('/logs', (req, res) => {
   console.log('console log statement');
   console.log('error statment ');
-  console.warn('uncaught server error');
-  console.log('uncaught exception');
-  console.info('informational logs');
-  console.debug('debug log statement');
-  console.warn('warn log statement');
-  res.send('generationg logs to save in database');
 });
 
 app.listen(port, () => {
