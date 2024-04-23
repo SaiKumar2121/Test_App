@@ -1,6 +1,5 @@
 const errsole = require('errsole');
 const ErrsoleMongoDB = require('errsole-mongodb');
-
 // Initialize errsole with ErrsoleMongoDB as the storage backen
 errsole.initialize({
   storage: new ErrsoleMongoDB('mongodb+srv://saikumar:rishi9100@cluster0.mcal1by.mongodb.net/', 'deployDatabase')
